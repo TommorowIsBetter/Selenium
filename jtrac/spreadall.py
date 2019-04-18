@@ -11,7 +11,7 @@ class Spreadall(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://127.0.0.1:8080"
+        self.base_url = "http://192.168.1.166"
         self.verificationErrors = []
         self.accept_next_alert = True
     
@@ -23,8 +23,8 @@ class Spreadall(unittest.TestCase):
         driver.find_element_by_id("loginName3").clear()
         driver.find_element_by_id("loginName3").send_keys("admin")
         driver.find_element_by_css_selector("input[type=\"submit\"]").click()
-        driver.find_element_by_link_text("搜索").click()
-        driver.find_element_by_link_text("展开全部").click()
+        driver.find_element_by_link_text("SEARCH").click()
+        driver.find_element_by_link_text("(expand all)").click()
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

@@ -12,7 +12,7 @@ class Diffselected(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://127.0.0.1:8080"
+        self.base_url = "http://192.168.1.166"
         self.verificationErrors = []
         self.accept_next_alert = True
 
