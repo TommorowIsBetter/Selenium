@@ -4,6 +4,7 @@
 @author:Wang Yan
 @ide:PyCharm
 @time:2019/4/15 22:30
+@description:在python路径下面放入geckodriver.exe，具体版本是64位即可。然后这里是火狐23和selenium2.35.0匹配。
 """
 
 from selenium import webdriver
